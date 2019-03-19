@@ -24,6 +24,15 @@ public class TestLibretto {
 	    libr.add(new Voto(25,"Ricerca Operativa",LocalDate.of(2019, 1, 25)));
 	    libr.add(new Voto(27,"Programmazione ad oggetti",LocalDate.of(2017, 1, 3)));
         
-	}
+	
+
+         Voto giusto=new Voto(20,"Geometria",LocalDate.now());
+         Voto sbagliato=new Voto(28,"Geometria",LocalDate.now());
+         Voto inesistente=new Voto( 30,"Informatica",LocalDate.now());
+     System.out.println(libr.esisteGiaVoto(giusto));
+     System.out.println(libr.esisteGiaVoto(sbagliato));
+     System.out.println(libr.esisteGiaVoto(inesistente));
+         
+}
 
 }
